@@ -1,0 +1,77 @@
+body {
+  background: black;
+  color: #b7b7b7;
+  margin: 0;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.topNavBar {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 16px;
+  padding-left: 16px;
+  padding: 20px 16px 20px 16px;
+}
+.topNavBar > .logo {
+  float: left;
+}
+.topNavBar > nav {
+  float: right;
+  margin-top: 7px;
+}
+.topNavBar > nav > ul {
+  list-style: none; /*取消列表的圆点*/
+  margin: 0;
+  padding: 0;
+}
+.topNavBar > nav > ul > li {
+  float: left;
+  margin-left: 17px;
+  margin-right: 17px;
+}
+.topNavBar > nav > ul > li > a {
+  font-size: 12px;
+  color: #b7b7b7;
+  /* text-decoration: none; 取消下划线 */
+  font-weight: bold; /*字体加粗*/
+  border-top: 3px solid transparent; /*使关于居中，上下空间一样就居中了*/
+  border-bottom: 3px solid transparent; /*提前预留1px的边框大小,颜色透明即可*/
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: block; /*使得li和a高度一样，能包裹住a*/
+}
+.topNavBar > nav > ul > li > a:hover {
+  border-bottom: 3px solid #e06567;
+}
+.topNavBar .logo {
+  font-size: 24px;
+  font-family: "Arial Black";
+  float: left;
+  margin-top: 3px;
+  margin-bottom: 4px;
+}
+.topNavBar .logo .rs {
+  margin-right: 4px;
+  color: orangered;
+}
+.topNavBar .logo .card {
+  color: gray;
+}
+
+/* .topNavBar .logo .rs {
+  font-style: 24px;
+  font-family: "Arial Black";
+}
+
+.topNavBar .logo .card {
+  font-style: 24px;
+  font-family: "Arial Black";
+} 
+可利用继承*/
