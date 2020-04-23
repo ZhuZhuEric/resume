@@ -5,34 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>朱易科的个人简历</title>
     <link rel="stylesheet" href="./css/a.css" />
+    <script src="//at.alicdn.com/t/font_1776220_tnqciwcpq9l.js"></script>
+    <style type="text/css">
+      .icon {
+        width: 1em;
+        height: 1em;
+        vertical-align: -0.15em;
+        fill: currentColor;
+        overflow: hidden;
+      }
+    </style>
   </head>
   <body>
-    <div class="topNavBar clearfix">
-      <a href="#" class="logo" alt="logo">
-        <span class="rs">RS</span><span class="card">card</span>
-      </a>
-      <nav>
-        <ul class="clearfix">
-          <li><a href="#">关于</a></li>
-          <li><a href="#">技能</a></li>
-          <li><a href="#">作品</a></li>
-          <li><a href="#">博客</a></li>
-          <li><a href="#">日历</a></li>
-          <li><a href="#">联系方式</a></li>
-          <li><a href="#">其他</a></li>
-        </ul>
-      </nav>
+    <div class="topNavBar">
+      <div class="topNavBar-inner clearfix">
+        <a href="#" class="logo" alt="logo">
+          <span class="rs">RS</span><span class="card">card</span>
+        </a>
+        <nav>
+          <ul class="clearfix">
+            <li><a href="#">关于</a></li>
+            <li><a href="#">技能</a></li>
+            <li><a href="#">作品</a></li>
+            <li><a href="#">博客</a></li>
+            <li><a href="#">日历</a></li>
+            <li><a href="#">联系方式</a></li>
+            <li><a href="#">其他</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
 
-    <div class="banner" style="background-image: url(#);"></div>
+    <div class="banner">
+      <div class="mask"></div>
+    </div>
     <main>
-      <div class="card">
-        <div class="pictureAndText">
-          <img src="" alt="头 像" />
-        </div>
-        <div class="text">
-          <div class="profile">
-            <span class="welcome">hello</span>
+      <div class="userCard">
+        <div class="pictureAndText clearfix">
+          <div class="picture">
+            <img src="./img/avatar.jpg" width="299" height="347" alt="头 像" />
+          </div>
+          <div class="text">
+            <span class="welcome">
+              Hello
+              <span class="triangle"> </span>
+            </span>
             <h1>朱 易 科</h1>
             <p>前 端 开 发 工 程 师</p>
             <hr />
@@ -46,19 +63,37 @@
               <dt>手机号</dt>
               <dd>188888888888</dd>
               <dt>手机号</dt>
-              <dd>188888888888</dd>
+              <dd>1888888 88888</dd>
             </dl>
           </div>
-          <footer class="media">
-            <a href="#"><img src="#" alt="..." /></a>
-            <a href="#"><img src="#" alt="..." /></a>
-            <a href="#"><img src="#" alt="..." /></a>
-            <a href="#"><img src="#" alt="..." /></a>
-            <a href="#"><img src="#" alt="..." /></a>
-            <a href="#"><img src="#" alt="..." /></a>
-            <a href="#"><img src="#" alt="..." /></a>
-          </footer>
         </div>
+        <footer class="media">
+          <a href="#">
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-github"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-jianshu"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-zhihu"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-weibo"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-email"></use>
+            </svg>
+          </a>
+        </footer>
       </div>
 
       <a href="#" class="button">下载pdf简历</a>
